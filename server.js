@@ -7,7 +7,8 @@ const app = express();
 // ===== Middleware =====
 app.use(cors());
 app.use(express.json());
-app.use(express.static(".")); // يخلي index.html يشتغل من السيرفر
+// app.use(express.static(".")); // يخلي index.html يشتغل من السيرفر
+app.use(express.static("public"));
 
 
 // ===== تخزين الطلبات مؤقتاً =====
