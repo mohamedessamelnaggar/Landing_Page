@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اطلب منتجك</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ١. Header -->
+    <header>
+        <h1>🛍️ اطلب منتجك دلوقتي</h1>
+        <p>توصيل لجميع محافظات مصر</p>
+    </header>
+
+    <!-- ٢. صور المنتج -->
+    <section class="product-section">
+        <div class="product-images">
+            <img src="images/iphone-16.jpeg" alt="المنتج" class="main-image">
+        </div>
+
+        <!-- اختيار الشكل -->
+        <div class="variants">
+            <p>اختار اللون:</p>
+            <button class="variant-btn active" data-value="أحمر">أحمر</button>
+            <button class="variant-btn" data-value="أزرق">أزرق</button>
+            <button class="variant-btn" data-value="أسود">أسود</button>
+        </div>
+    </section>
+
+    <!-- ٣. الفورم -->
+    <section class="form-section">
+        <input type="text" id="name" placeholder="اسمك كامل" required>
+        <input type="tel" id="phone" placeholder="رقم التليفون" required>
+        <select id="city">
+            <option value="">اختار المحافظة</option>
+            <option value="القاهرة">القاهرة</option>
+            <option value="الجيزة">الجيزة</option>
+            <option value="الإسكندرية">الإسكندرية</option>
+            <option value="أسيوط">أسيوط</option>
+        </select>
+        <input type="text" id="address" placeholder="العنوان بالتفصيل" required>
+
+        <button id="submit-btn" onclick="submitOrder()">
+            📲 إرسال الطلب على واتساب
+        </button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
